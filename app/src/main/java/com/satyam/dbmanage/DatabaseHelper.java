@@ -6,8 +6,6 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import androidx.annotation.Nullable;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -51,7 +49,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     public List<CustomerModel> getEveryone() {
         List<CustomerModel> returnlist = new ArrayList<>();
-        String quarryString = "SELECT * FROM " + CUSTOMER_TABLE;
+        String quarryString = " SELECT * FROM " + CUSTOMER_TABLE;
         SQLiteDatabase db = getReadableDatabase();
         Cursor cursor = db.rawQuery(quarryString, null);
         if (cursor.moveToFirst()) {

@@ -18,12 +18,10 @@ public class CustomerModel {
 
     @Override
     public String toString() {
-        return "CustomerModel{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", age=" + age +
-                ", isActive=" + isActive +
-                '}';
+        return
+                " Name : " + name +
+                "\n Age : " + age +
+                "\n isActive : " + isActive ;
     }
 
     public int getId() {

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/dbbg3"
     tools:context=".MainActivity">
 
     <EditText
@@ -43,6 +44,7 @@
         android:layout_width="158dp"
         android:layout_height="33dp"
         android:text="@string/ActiveCustomer"
+        android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -56,6 +58,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
         android:text="@string/btnViewall"
+        android:backgroundTint="#00cc66"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sw_active"
@@ -67,6 +70,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="52dp"
         android:text="@string/btnAdd"
+        android:backgroundTint="#0080ff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/btn_viewAll"
